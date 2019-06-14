@@ -1,32 +1,42 @@
-.fixed-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 200px;
-}
-
-.navbar {
-  text-transform: uppercase;
-  font-weight: $font-bold;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-}
 
 @media only screen and (min-width: 769px) {
-  .fixed-left {
+  .main-header {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 200px;
+    text-align: center;
   }
 
-  .navbar {
-    text-transform: uppercase;
-    font-weight: $font-bold;
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__logo-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__list {
+      text-transform: uppercase;
+      font-weight: $font-black;
+      padding-top: 1.5em;
+    }
+
+    &__item {
+      padding: .5em 0;
+    }
+
+    &__link {
+      padding: .5em 0;
+      color: $black;
+    }
+
   }
 }
