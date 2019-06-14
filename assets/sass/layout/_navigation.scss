@@ -1,0 +1,32 @@
+.fixed-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: $font-bold;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 769px) {
+  .fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+  }
+
+  .navbar {
+    text-transform: uppercase;
+    font-weight: $font-bold;
+  }
+}

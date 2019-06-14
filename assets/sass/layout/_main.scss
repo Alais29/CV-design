@@ -1,0 +1,18 @@
+.main-content {
+    min-height: 100vh;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: $font-black;
+        font-size: 4em;
+        color: $dark-blue;
+    }
+
+    &__contact {
+        font-size: 1.2em;
+
+        &--uppercase {
+            text-transform: uppercase;
+        }
+    }
+}
